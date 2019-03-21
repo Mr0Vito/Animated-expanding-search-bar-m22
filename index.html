@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Expanding Search Bar</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="searchbox">
+      <input type="text" class="input" id="input">
+      <div class="btn" id="btn"><i class="fas fa-search"></i></div>
+    </div>
+</div>	
+	
+<script>
+	var btn = document.getElementById("btn");
+var input = document.getElementById("input");
+
+btn.addEventListener("click", function(){
+   this.classList.toggle("btn_active");
+   input.classList.toggle("input_active");
+})
+</script>
+	
+</body>
+</html>
